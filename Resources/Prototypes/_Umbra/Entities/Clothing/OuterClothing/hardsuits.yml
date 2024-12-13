@@ -1,0 +1,38 @@
+#Worn Elite Hardsuit
+- type: entity
+  parent: [ClothingOuterHardsuitBase, BaseSyndicateContraband]
+  id: ClothingOuterHardsuitWornElite
+  name: worn elite hardsuit
+  description: A modified and run down Gorlex Marauders elite hardsuit. A large, open gash in the suit can be seen on the right shoulder and chest, revealing the flexible padding underneath.
+  components:
+  - type: Sprite
+    sprite: _Umbra/Clothing/OuterClothing/Hardsuits/wornelite.rsi
+  - type: Clothing
+    sprite: _Umbra/Clothing/OuterClothing/Hardsuits/wornelite.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: FireProtection
+    reduction: 0.8
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.55
+        Heat: 0.25
+        Radiation: 0.01
+        Caustic: 0.6
+  - type: Item
+    size: Huge
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitWornElite
